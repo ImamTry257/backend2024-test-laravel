@@ -15,14 +15,15 @@
                                 <a href="{{ route('admin') }}" class="btn btn-primary">Back</a>
                             </div>
                             <div class="form-add">
-                                <form>
+                                <form action="{{ route('admin.add.store') }}" method="POST">
+                                    @csrf
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Name</label>
                                         <input type="text" class="form-control" id="name" name="u_name">
                                     </div>
     
                                     <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="is_project">
+                                        <input type="checkbox" class="form-check-input" name="is_project" id="is_project">
                                         <label class="form-check-label" for="is_project">Is Project</label>
                                     </div>
     
@@ -33,15 +34,15 @@
     
                                     <div class="mb-3">
                                         <label for="phone_number" class="form-label">Phone Number</label>
-                                        <input type="number" class="form-control" id="phone_number">
+                                        <input type="number" class="form-control" id="phone_number" name="phone_number">
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="city" class="form-label">City</label>
-                                        <input type="text" class="form-control" id="city">
+                                        <input type="text" class="form-control" id="city" name="city">
                                     </div>
     
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Save</button>
                                   </form>
                             </div>
                         </div>
