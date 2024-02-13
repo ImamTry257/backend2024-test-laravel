@@ -11,7 +11,7 @@ class ClientController extends Controller
      */
     public function index()
     {
-        //
+        return view('crud.client.adminmanage');
     }
 
     /**
@@ -19,7 +19,7 @@ class ClientController extends Controller
      */
     public function create()
     {
-        //
+        return view('crud.client.adminadd');
     }
 
     /**
@@ -27,7 +27,7 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 
     }
 
     /**
@@ -35,7 +35,7 @@ class ClientController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('crud.client.adminview');
     }
 
     /**
@@ -43,7 +43,7 @@ class ClientController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('crud.client.adminedit');
     }
 
     /**
